@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Bibliothèque Culinaires - Mon Super Blog de Cuisine</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* CSS spécifique à la mise en page des livres */
+        .bibliotheque-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 colonnes sur grand écran, adaptatif */
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .livre-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden; /* Assure que l'image reste dans la carte */
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .livre-card:hover {
+            transform: translateY(-5px); /* Petit effet de soulèvement au survol */
+        }
+
+        .livre-card img {
+            width: 100%;
+            height: 350px; /* Hauteur fixe pour les couvertures */
+            object-fit: cover;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .livre-details {
+            padding: 15px;
+        }
+
+        .livre-details h3 {
+            margin-top: 5px;
+            color: #556B2F; /* Vert olive (comme les titres de recettes) */
+        }
+
+        .livre-details p {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mon Super Blog de Cuisine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bibliotheque.html">Ma Bibliothèque Culinaires</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <h2 style="text-align: center; margin-bottom: 30px;">Mes Ouvrages Culinaires Préférés</h2>
+        <p style="text-align: center; font-style: italic;">Une sélection des livres qui m'inspirent au quotidien dans ma cuisine.</p>
+
+        <section class="bibliotheque-grid">
+            
+            <div class="livre-card">
+                <img src="couverture-livre-1.jpg" alt="Couverture du livre La Cuisine Française">
+                <div class="livre-details">
+                    <h3>Le Grand Livre de la Cuisine Française</h3>
+                    <p>Auteur: Chef Duchemin</p>
+                    <p>L'ouvrage de référence pour maîtriser les techniques classiques de la cuisine bourgeoise.</p>
+                    <a href="#" class="bouton-lire">Voir la Fiche/Acheter</a>
+                </div>
+            </div>
+
+            <div class="livre-card">
+                <img src="couverture-livre-2.jpg" alt="Couverture du livre Les Recettes Végétales">
+                <div class="livre-details">
+                    <h3>Recettes 100% Végétales</h3>
+                    <p>Auteur: Marie Dupont</p>
+                    <p>Des idées créatives et gourmandes pour cuisiner sans produits d'origine animale. Parfait pour les Plats et Entrées.</p>
+                    <a href="#" class="bouton-lire">Voir la Fiche/Acheter</a>
+                </div>
+            </div>
+
+            <div class="livre-card">
+                <img src="couverture-livre-3.jpg" alt="Couverture du livre Pâtisseries Simples">
+                <div class="livre-details">
+                    <h3>Pâtisseries du Dimanche</h3>
+                    <p>Auteur: Paul Le Boulanger</p>
+                    <p>Le guide parfait pour des desserts rapides et réussis, même pour les débutants.</p>
+                    <a href="#" class="bouton-lire">Voir la Fiche/Acheter</a>
+                </div>
+            </div>
+
+            </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Super Blog de Cuisine. Conception par Gemini.</p>
+    </footer>
+
+</body>
+</html>

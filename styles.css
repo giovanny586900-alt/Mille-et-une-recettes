@@ -1,0 +1,132 @@
+/* 1. RÉINITIALISATION ET STYLES DE BASE */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Police de caractère élégante */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Fond très clair */
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto; /* Centrer le contenu principal */
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif; /* Une police de caractère de style "magazine" pour les titres */
+    color: #8B4513; /* Marron chaud (terre, chocolat) */
+    text-align: center;
+}
+
+/* 2. STYLE DE L'EN-TÊTE ET DE LA NAVIGATION */
+header {
+    background-color: #D2B48C; /* Un beige-marron clair, couleur bois/épice */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex; /* Aligner les liens horizontalement */
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8B4513; /* Couleur de lien forte */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #694513; /* Assombrir au survol */
+}
+
+/* 3. STYLES DES CARTES D'ARTICLES (Recettes) */
+.recette-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Coins arrondis pour un look plus doux */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recette-card h3 {
+    color: #556B2F; /* Vert olive pour le titre de la recette (herbes) */
+    margin-top: 0;
+}
+
+.recette-card .categorie {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.bouton-lire {
+    display: inline-block;
+    background-color: #FF6347; /* Tomate (une couleur vive et appétissante) */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.bouton-lire:hover {
+    background-color: #E5533F;
+}
+
+/* 4. PRÉVISUALISATION DES CATÉGORIES */
+.categories-preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.categorie-block {
+    flex: 1 1 30%; /* Pour afficher environ 3 blocs par ligne sur grand écran */
+    padding: 15px;
+    background-color: #FAFAD2; /* Jaune pâle, couleur beurre/farine */
+    border-left: 5px solid #8B4513;
+    border-radius: 5px;
+}
+
+.categorie-block h3 a {
+    text-decoration: none;
+    color: #8B4513;
+}
+
+/* 5. PIED DE PAGE */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #D2B48C;
+    text-decoration: none;
+    margin: 0 5px;
+}

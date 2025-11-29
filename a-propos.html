@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Nous - Mon Super Blog de Cuisine</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* CSS spécifique à la page À Propos */
+        .a-propos-section {
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            margin: 40px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .a-propos-section h2 {
+            text-align: left;
+            border-bottom: 2px solid #D2B48C; /* Ligne sous le titre */
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .profil-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #FAFAD2; /* Jaune pâle pour la carte profil */
+            border-left: 5px solid #8B4513;
+            border-radius: 5px;
+        }
+
+        .profil-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Image ronde */
+            object-fit: cover;
+            border: 3px solid #8B4513;
+        }
+
+        .valeurs-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .valeurs-list li {
+            background-color: #FF6347; /* Tomate */
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* Adaptation pour les petits écrans */
+        @media (max-width: 600px) {
+            .profil-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profil-card img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mon Super Blog de Cuisine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bibliotheque.html">Ma Bibliothèque Culinaires</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="a-propos-section">
+            <h2>Notre Histoire : La Naissance d'une Passion</h2>
+            
+            <p>Bienvenue sur **Mon Super Blog de Cuisine**, le lieu où la gourmandise rencontre la simplicité. Ce blog est né de [Votre nom/votre idée] en [Année ou Saison], avec la conviction que tout le monde peut cuisiner des plats incroyables, qu'il s'agisse d'une **Entrée** raffinée, d'un **Plat** réconfortant ou d'un **Dessert** mémorable.</p>
+            
+            <p>Notre mission est de partager des recettes claires, testées, et souvent inspirées des ouvrages de notre bibliothèque personnelle. Nous nous concentrons sur les ingrédients de saison et les techniques accessibles.</p>
+
+            <h3>Nos Valeurs Fondamentales</h3>
+            <ul class="valeurs-list">
+                <li>Simplicité</li>
