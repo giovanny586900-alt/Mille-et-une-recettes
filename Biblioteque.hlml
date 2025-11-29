@@ -72,7 +72,7 @@
         <section class="bibliotheque-grid">
             
             <div class="livre-card">
-                <img src="couverture-livre-1.jpg" alt="Couverture du livre La Cuisine Française">
+                <img src="couverture-livre-francais.jpg" alt="Couverture du livre La Cuisine Française">
                 <div class="livre-details">
                     <h3>Le Grand Livre de la Cuisine Française</h3>
                     <p>Auteur: Chef Duchemin</p>
